@@ -13,9 +13,25 @@ export const Container = styled.div`
     color: #6ed309;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     position: fixed;
-    padding-inline: min(10rem, 100%);
+    /* padding-inline: 10rem; */
+  }
+
+  .wrapper {
+    width: 1024px;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1024px;
+    border: 1px solid red;
+  }
+
+  @media (max-width: 1024px) {
+    .header {
+    /* padding-inline: 1rem; */
+    }
   }
 
   .header .logo {
@@ -25,6 +41,7 @@ export const Container = styled.div`
 
   .header .nav {
     font-size: 1rem;
+    min-width:430px;
     display: flex;
     align-items: center;
     justify-content: space-between;
