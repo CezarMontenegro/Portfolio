@@ -39,6 +39,21 @@ function App() {
           </div>
         </div>
       </header>
+      <section className="section-one">
+        <div className="wrapper-section-one">
+          <div className="about">
+            <p>Hello World 👋🏼</p>
+            <p>Eu sou Cezar,</p>
+            <p>Desenvolver Web Full Stack.</p>
+          </div>
+          <div className="photo">
+
+          </div>
+        </div>
+      </section>
+      <section className="section-two">
+
+      </section>
     </Container>
   )
 }

@@ -1,12 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background-color: rgb(12, 12, 12);
-  height: 100vh;
-  width: 100vw;
 
   .header {
-    border: 1px solid red;
     background-color: transparent;
     height: 4.5rem;
     width: 100%;
@@ -15,23 +11,15 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     position: fixed;
-    /* padding-inline: 10rem; */
   }
 
   .wrapper {
     width: 1024px;
     display: flex;
-    display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 1024px;
     border: 1px solid red;
-  }
-
-  @media (max-width: 1024px) {
-    .header {
-    /* padding-inline: 1rem; */
-    }
   }
 
   .header .logo {
@@ -63,4 +51,64 @@ export const Container = styled.div`
     display: flex;
     gap: 1rem;
   }
+
+  .section-one {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(12, 12, 12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+  }
+
+  .wrapper-section-one {
+    width: 1024px;
+    height: 100%;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1024px;
+    border: 1px solid red;
+  }
+
+  .section-one .about {
+    width: 50%;
+    border: 1px solid green;
+  }
+
+  .section-one .photo {
+    width: 50%;
+    border: 1px solid green;
+  }
+
+  .about p:first-child {
+    color: #6ed309;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 150%;
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  .about p:nth-child(2) {
+    font-size: 5rem;
+    color: rgb(255, 255, 255);
+    line-height: 110%;
+    margin-bottom: 1rem;
+  }
+
+  .about p:last-child {
+    font-size: 2.5rem;
+    color: #FFFFFFa8;
+  }
+
+  .section-two {
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid red;
+  }
+
 `
