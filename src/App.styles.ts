@@ -6,7 +6,7 @@ export const Container = styled.div`
     background-color: transparent;
     height: 4.5rem;
     width: 100%;
-    color: #6ed309;
+    color: #149400;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,7 +19,6 @@ export const Container = styled.div`
     align-items: center;
     justify-content: space-between;
     max-width: 1024px;
-    border: 1px solid red;
   }
 
   .header .logo {
@@ -42,7 +41,7 @@ export const Container = styled.div`
 
   .header .nav a {
     text-decoration: none;
-    color: #6ed309;
+    color: #149400;
 
   }
 
@@ -59,7 +58,6 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
   }
 
   .wrapper-section-one {
@@ -70,21 +68,18 @@ export const Container = styled.div`
     align-items: center;
     justify-content: space-between;
     max-width: 1024px;
-    border: 1px solid red;
   }
 
   .section-one .about {
     width: 50%;
-    border: 1px solid green;
   }
 
   .section-one .photo {
     width: 50%;
-    border: 1px solid green;
   }
 
   .about p:first-child {
-    color: #6ed309;
+    color: #149400;
     font-size: 1.5rem;
     font-weight: bold;
     line-height: 150%;
@@ -100,15 +95,45 @@ export const Container = styled.div`
     margin-bottom: 1rem;
   }
 
-  .about p:last-child {
-    font-size: 2.5rem;
-    color: #FFFFFFa8;
-  }
+  .typing-demo {
+  width: 27ch;
+  animation: typing 2s steps(27), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+  color: #FFFFFFa8;
+  border-color: #149400;
 
-  .section-two {
-    width: 100vw;
-    height: 100vh;
-    border: 1px solid red;
+}
+
+@keyframes typing {
+  from {
+    width: 0
   }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+.photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo img {
+  border-radius: 50%;
+  width: 300px;
+}
+
+.section-two {
+  width: 100vw;
+  height: 100vh;
+}
 
 `

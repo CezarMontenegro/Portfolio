@@ -1,7 +1,7 @@
 import { Container } from "./App.styles"
+import photo from "./assets/1712584603274-fotor-bg-remover-20240520122945.png";
 
 function App() {
-
   return (
     <Container>
       <header className="header">
@@ -44,10 +44,10 @@ function App() {
           <div className="about">
             <p>Hello World 👋🏼</p>
             <p>Eu sou Cezar,</p>
-            <p>Desenvolver Web Full Stack.</p>
+            <p className="typing-demo">Desenvolver Web Full Stack.</p>
           </div>
           <div className="photo">
-
+            <img src={photo} alt="Cezar Montenegro" />
           </div>
         </div>
       </section>
