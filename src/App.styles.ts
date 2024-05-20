@@ -26,13 +26,21 @@ export const Container = styled.div`
     font-family: "Manjari", sans-serif;
   }
 
+  .header .logo:hover {
+    color: #22ff00;
+
+  }
+
   .header .nav {
     font-size: 1rem;
     min-width:430px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    border: 1px solid red;
   }
+
+
 
   .header .nav ul {
     display: flex;
@@ -42,13 +50,25 @@ export const Container = styled.div`
   .header .nav a {
     text-decoration: none;
     color: #149400;
+  }
 
+  .nav a:hover {
+    color: #22ff00;
+    text-decoration: underline;
   }
 
   .header .social {
     font-size: 1rem;
     display: flex;
     gap: 1rem;
+  }
+
+  .header .social svg {
+    color: #149400;
+  }
+
+  .header .social svg:hover {
+    color: #22ff00;
   }
 
   .section-one {
