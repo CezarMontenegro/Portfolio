@@ -34,27 +34,43 @@ export const Container = styled.div`
   .header .nav {
     font-size: 1rem;
     min-width:430px;
+    height: 70px;
+    width: 430px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    border: 1px solid red;
   }
-
-
 
   .header .nav ul {
     display: flex;
     gap: 1.5rem;
   }
 
-  .header .nav a {
+  .nav ul li a {
     text-decoration: none;
     color: #149400;
+    position: relative;
+    padding: 20px 0;
+    transition: .3s;
   }
 
-  .nav a:hover {
+  .nav ul li a:hover {
     color: #22ff00;
-    text-decoration: underline;
+  }
+
+  .nav ul li a::after {
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: #22ff00;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .3s ease-in-out;
+  }
+
+  .nav ul li a:hover::after {
+    width: 100%;
   }
 
   .header .social {
@@ -120,11 +136,10 @@ export const Container = styled.div`
   animation: typing 2s steps(27), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 3px solid;
+  border-right: 3px solid #149400;
   font-family: monospace;
   font-size: 2em;
   color: #FFFFFFa8;
-  border-color: #149400;
 
 }
 
@@ -149,6 +164,13 @@ export const Container = styled.div`
 .photo img {
   border-radius: 50%;
   width: 300px;
+  background-color: #149400;
+  transition: .3s;
+}
+
+.photo img:hover {
+  background-color: #22ff00;
+  box-shadow: 5px 5px 20px 60px #22ff00;
 }
 
 .section-two {

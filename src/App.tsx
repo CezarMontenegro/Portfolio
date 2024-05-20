@@ -1,5 +1,5 @@
 import { Container } from "./App.styles"
-import photo from "./assets/1712584603274-fotor-bg-remover-20240520122945.png";
+import photo from "./assets/1712584603274-fotor-bg-remover-20240520144827.png";
 
 function App() {
   return (
