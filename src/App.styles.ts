@@ -25,6 +25,8 @@ export const Container = styled.div`
   .header .logo {
     font-size: 2rem;
     font-family: "Manjari", sans-serif;
+    padding: 6px 0;
+    position: relative;
   }
 
   .header .logo:hover {
@@ -51,7 +53,7 @@ export const Container = styled.div`
     text-decoration: none;
     color: #149400;
     position: relative;
-    padding: 20px 0;
+    padding: 10px 0;
     transition: .3s;
   }
 
@@ -59,10 +61,10 @@ export const Container = styled.div`
     color: #22ff00;
   }
 
-  .nav ul li a::after {
+  .nav ul li a::after, .header .logo::after, .social a::after {
     content: " ";
     width: 0%;
-    height: 4px;
+    height: 2px;
     background-color: #22ff00;
     position: absolute;
     bottom: 0;
@@ -70,7 +72,7 @@ export const Container = styled.div`
     transition: .3s ease-in-out;
   }
 
-  .nav ul li a:hover::after {
+  .nav ul li a:hover::after, .header .logo:hover::after, .social a:hover::after {
     width: 100%;
   }
 
@@ -78,6 +80,11 @@ export const Container = styled.div`
     font-size: 1rem;
     display: flex;
     gap: 1rem;
+  }
+
+  .header .social a {
+    position: relative;
+    padding: 6px 0;
   }
 
   .header .social svg {
