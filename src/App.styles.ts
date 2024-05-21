@@ -23,7 +23,7 @@ export const Container = styled.div`
   }
 
   .header .logo {
-    font-size: 2rem;
+    font-size: 2.5em;
     font-family: "Manjari", sans-serif;
     padding: 6px 0;
     position: relative;
@@ -140,16 +140,16 @@ export const Container = styled.div`
   }
 
   .typing-demo {
-  width: 27ch;
-  animation: typing 2s steps(27), blink .5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid #149400;
-  font-family: monospace;
-  font-size: 2em;
-  color: #FFFFFFa8;
-
-}
+    width: 27ch;
+    animation: typing 2s steps(27), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #149400;
+    font-family: monospace;
+    font-size: 2em;
+    color: #FFFFFFa8;
+    margin-bottom: 40px;
+  }
 
 @keyframes typing {
   from {
@@ -162,6 +162,29 @@ export const Container = styled.div`
     border-color: transparent
   }
 }
+
+.about button {
+  background: none;
+  border: 0.2rem solid #149400;
+  padding: 1rem 2rem;
+  width: fit-content;
+  color: #149400;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .4s;
+}
+
+.about button:hover {
+  color: #d1ffca;
+  background-color: #149400;
+}
+
+
 
 .photo {
   display: flex;
@@ -177,7 +200,7 @@ export const Container = styled.div`
 }
 
 .photo img:hover {
-  background-color: #22ff00;
+  width: 350px;
 }
 
 .section-two {

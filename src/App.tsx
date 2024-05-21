@@ -45,10 +45,14 @@ function App() {
             <p>Hello World 👋🏼</p>
             <p>Eu sou Cezar,</p>
             <p className="typing-demo">Desenvolver Web Full Stack.</p>
+            <button>
+              Fale comigo
+            </button>
           </div>
           <div className="photo">
             <img src={photo} alt="Cezar Montenegro" />
           </div>
+
         </div>
       </section>
       <section className="section-two">
