@@ -4,6 +4,7 @@ export const Container = styled.div`
 
   .header {
     background-color: transparent;
+    backdrop-filter: blur(5px);
     height: 4.5rem;
     width: 100%;
     color: #149400;
@@ -170,7 +171,6 @@ export const Container = styled.div`
 
 .photo img:hover {
   background-color: #22ff00;
-  box-shadow: 5px 5px 20px 60px #22ff00;
 }
 
 .section-two {
