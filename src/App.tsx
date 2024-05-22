@@ -1,6 +1,7 @@
 import { Container } from "./App.styles"
 import photo1 from "./assets/photo1.png";
 import photo2 from "./assets/photo2.jpeg";
+import webstore from "./assets/web-store.gif"
 
 function App() {
   return (
@@ -67,8 +68,36 @@ function App() {
         </div>
       </section>
       <section id="projetos" className="section-projetos">
-        <div className="wrapper">
-          <h2>Projetos</h2>
+        <div className="wrapper-projetos">
+          <div className="projetos-header">
+            <h2>Projetos</h2>
+          </div>
+          <div className="cards">
+            <div className="project-card">
+              <h3>Pomofocus</h3>
+              <div className="img-wrapper">
+                <img src={webstore} alt="" />
+              </div>
+              <p>Plataforma de estudos desenvolvida na Hackathon do Programa de Formação 4 da FCamara.</p>
+              <p>HTML-CSS-JS-React</p>
+            </div>
+            <div className="project-card">
+              <h3>Pomofocus</h3>
+              <div className="img-wrapper">
+                <img src={webstore} alt="" />
+              </div>
+              <p>Plataforma de estudos desenvolvida na Hackathon do Programa de Formação 4 da FCamara.</p>
+              <p>HTML-CSS-JS-React</p>
+            </div>
+            <div className="project-card">
+              <h3>Pomofocus</h3>
+              <div className="img-wrapper">
+                <img src={webstore} alt="" />
+              </div>
+              <p>Plataforma de estudos desenvolvida na Hackathon do Programa de Formação 4 da FCamara.</p>
+              <p>HTML-CSS-JS-React</p>
+            </div>
+          </div>
         </div>
       </section>
       <section id="habilidades" className="section-habilidades">

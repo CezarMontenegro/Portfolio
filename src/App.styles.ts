@@ -211,7 +211,7 @@ export const Container = styled.div`
 
 .section-sobre .photo img {
   border-radius: 10px;
-  box-shadow: -1px 1px 10px rgb(182, 182, 182);
+  box-shadow: -1px 1px 6px rgb(182, 182, 182);
 }
 
 .section-sobre .about {
@@ -235,17 +235,85 @@ export const Container = styled.div`
 
 .section-projetos {
   width: 100vw;
-  height: 100vh;
-  background-color: rgb(12, 12, 12);
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgb(12, 12, 12)
+}
+
+.wrapper-projetos {
+  width: 1024px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1024px;
+  padding-top: 4.5rem;
+  }
+
+.section-projetos .projetos-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.section-projetos .projetos-header h2 {
+  color: #149400;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.section-projetos .cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.project-card {
+  width: 330px;
+  height: 540px;
+  background-color: rgb(20, 20, 20);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 16px;
+  padding: 4rem; 
+}
+
+.project-card h3 {
+  width: 150px;
+  height: 50px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.project-card .img-wrapper {
+  width: 250px;
+  height: 200px;
+}
+
+.project-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.project-card p {
+  font-size: 18px;
+  line-height: 1.3;
+  color: #FFFFFFa8;
+  text-align: center;
 }
 
 .section-habilidades {
   width: 100vw;
   height: 100vh;
-  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -254,7 +322,6 @@ export const Container = styled.div`
 .section-contato {
   width: 100vw;
   height: 100vh;
-  border: 1px solid red;
   background-color: rgb(12, 12, 12);
   display: flex;
   align-items: center;
