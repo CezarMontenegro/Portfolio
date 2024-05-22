@@ -101,8 +101,13 @@ function App() {
         </div>
       </section>
       <section id="habilidades" className="section-habilidades">
-        <div className="wrapper">
-          <h2>Habilidades</h2>
+        <div className="wrapper-habilidades">
+          <div className="habilidades-header">
+            <h2>Habilidades</h2>
+          </div>
+          <div>
+            
+          </div>
         </div>
       </section>
       <section id="contato" className="section-contato">

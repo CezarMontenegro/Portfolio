@@ -235,11 +235,13 @@ export const Container = styled.div`
 
 .section-projetos {
   width: 100vw;
+  height: 100vh;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(12, 12, 12)
+  background-color: rgb(12, 12, 12);
+  border: 1px solid red;
 }
 
 .wrapper-projetos {
@@ -248,22 +250,23 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   max-width: 1024px;
-  padding-top: 4.5rem;
+  padding-top: 4rem;
+  border: 1px solid red;
   }
 
 .section-projetos .projetos-header {
   width: 100%;
   display: flex;
   justify-content: center;
+  border: 1px solid blue;
 }
 
 .section-projetos .projetos-header h2 {
   color: #149400;
   font-size: 3rem;
   font-weight: bold;
-  margin: 20px 0;
 }
 
 .section-projetos .cards {
@@ -276,14 +279,21 @@ export const Container = styled.div`
 
 .project-card {
   width: 330px;
-  height: 540px;
-  background-color: rgb(20, 20, 20);
+  height: 500px;
+  background-color: rgb(25, 25, 25);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
   margin-bottom: 16px;
-  padding: 4rem; 
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.267);
+  transition: .3s;
+}
+
+.project-card:hover {
+  background-color: rgb(30, 30, 30);
 }
 
 .project-card h3 {
@@ -291,14 +301,16 @@ export const Container = styled.div`
   height: 50px;
   font-size: 1.5rem;
   text-align: center;
+  color: #FFFFFFa8;
 }
 
 .project-card .img-wrapper {
   width: 250px;
   height: 200px;
+  border: 1px solid red;
 }
 
-.project-card img {
+.project-card .img-wrapper img {
   width: 100%;
   height: 100%;
   border-radius: 10px;
@@ -317,7 +329,35 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid red;
 }
+
+.wrapper-habilidades {
+  width: 1024px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1024px;
+  padding-top: 5rem;
+  border: 1px solid red;
+}
+
+.section-habilidades .habilidades-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid blue;
+}
+
+.section-habilidades .habilidades-header h2 {
+  color: #149400;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+
 
 .section-contato {
   width: 100vw;
