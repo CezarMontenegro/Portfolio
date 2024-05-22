@@ -16,6 +16,7 @@ export const Container = styled.div`
 
   .wrapper {
     width: 1024px;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -29,7 +30,13 @@ export const Container = styled.div`
     position: relative;
   }
 
-  .header .logo:hover {
+  .header .logo a {
+    text-decoration: none;
+    color: #149400;
+
+  }
+
+  .header .logo a:hover {
     color: #22ff00;
 
   }
@@ -104,25 +111,11 @@ export const Container = styled.div`
     justify-content: center;
   }
 
-  .wrapper-section-one {
-    width: 1024px;
-    height: 100%;
-    display: flex;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1024px;
-  }
-
   .section-one .about {
     width: 50%;
   }
 
-  .section-one .photo {
-    width: 50%;
-  }
-
-  .about p:first-child {
+  .section-one .about p:first-child {
     color: #149400;
     font-size: 1.5rem;
     font-weight: bold;
@@ -132,7 +125,7 @@ export const Container = styled.div`
     margin-bottom: 1rem;
   }
 
-  .about p:nth-child(2) {
+  .section-one .about p:nth-child(2) {
     font-size: 5rem;
     color: rgb(255, 255, 255);
     line-height: 110%;
@@ -148,7 +141,7 @@ export const Container = styled.div`
     font-family: monospace;
     font-size: 2em;
     color: #FFFFFFa8;
-    margin-bottom: 40px;
+    margin-bottom: 2rem;
   }
 
 @keyframes typing {
@@ -184,28 +177,88 @@ export const Container = styled.div`
   background-color: #149400;
 }
 
+.section-one .photo {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-
-.photo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.photo img {
+.section-one .photo img {
   border-radius: 50%;
   width: 300px;
   background-color: #149400;
   transition: .3s;
 }
 
-.photo img:hover {
+.section-one .photo img:hover {
   width: 350px;
 }
 
-.section-two {
+.section-sobre {
   width: 100vw;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-sobre .photo{
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.section-sobre .photo img {
+  border-radius: 10px;
+  box-shadow: -1px 1px 10px rgb(182, 182, 182);
+}
+
+.section-sobre .about {
+  width: 50%;
+  padding: 0 20px;
+}
+
+.section-sobre .about h2 {
+  color: #149400;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 10px 0 30px;
+}
+
+.section-sobre .about p {
+  font-size: 18px;
+  line-height: 1.3;
+  color: #FFFFFFa8;
+
+}
+
+.section-projetos {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(12, 12, 12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-habilidades {
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-contato {
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid red;
+  background-color: rgb(12, 12, 12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 `

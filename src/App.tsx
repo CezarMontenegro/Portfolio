@@ -1,18 +1,19 @@
 import { Container } from "./App.styles"
-import photo from "./assets/1712584603274-fotor-bg-remover-20240520144827.png";
+import photo1 from "./assets/photo1.png";
+import photo2 from "./assets/photo2.jpeg";
 
 function App() {
   return (
     <Container>
       <header className="header">
         <div className="wrapper">
-          <div className="logo">&lt;\Cezar&gt;</div>
+          <div className="logo"><a href="#section-one">&lt;\Cezar&gt;</a></div>
           <nav className="nav">
             <ul>
-              <li><a href="">Sobre mim</a></li>
-              <li><a href="">Projetos</a></li>
-              <li><a href="">Conhecimentos</a></li>
-              <li><a href="">Fale comigo</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#projetos">Projetos</a></li>
+              <li><a href="#habilidades">Habilidades</a></li>
+              <li><a href="#contato">Contato</a></li>
             </ul>
           </nav>
           <div className="social">
@@ -39,8 +40,8 @@ function App() {
           </div>
         </div>
       </header>
-      <section className="section-one">
-        <div className="wrapper-section-one">
+      <section id="section-one" className="section-one">
+        <div className="wrapper">
           <div className="about">
             <p>Hello World 👋🏼</p>
             <p>Eu sou Cezar,</p>
@@ -50,14 +51,37 @@ function App() {
             </button>
           </div>
           <div className="photo">
-            <img src={photo} alt="Cezar Montenegro" />
+            <img src={photo1} alt="Cezar Montenegro" />
           </div>
-
         </div>
       </section>
-      <section className="section-two">
-
+      <section id="sobre" className="section-sobre">
+        <div className="wrapper">
+            <div className="photo">
+              <img src={photo2} alt="" />
+            </div>
+            <div className="about">
+              <h2>Sobre mim</h2>
+              <p>isicing elit. Odio recusandae consectetur at labore iste, ex eaque officia obcaecati quos eligendi amet quidem veniam suscipit impedit distinctio enim dolore explicabo sit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis error similique sunt laudantium corrupti incidunt inventore. Minus blanditiis velit eligendi et dignissimos, quas aliquid odio magnam, repellat, laborum nesciunt molestias. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis totam aliquam praesentium optio ducimus? Accusantium officiis rem mollitia iste tempora explicabo laudantium, accusamus modi at doloribus dicta est quae magni?</p>
+            </div>
+        </div>
       </section>
+      <section id="projetos" className="section-projetos">
+        <div className="wrapper">
+          <h2>Projetos</h2>
+        </div>
+      </section>
+      <section id="habilidades" className="section-habilidades">
+        <div className="wrapper">
+          <h2>Habilidades</h2>
+        </div>
+      </section>
+      <section id="contato" className="section-contato">
+        <div className="wrapper">
+          <h2>Contato</h2>
+        </div>
+      </section>
+      
     </Container>
   )
 }
