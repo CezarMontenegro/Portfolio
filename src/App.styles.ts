@@ -304,7 +304,7 @@ export const Container = styled.div`
 
   .project-card .img-wrapper {
     width: 250px;
-    height: 200px;
+    height: 150px;
   }
 
   .project-card .img-wrapper img {
@@ -476,7 +476,7 @@ export const Container = styled.div`
 
   @keyframes upDown {
     0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
+    50% { transform: translateY(-30px); }
   }
 
   footer {

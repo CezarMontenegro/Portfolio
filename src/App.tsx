@@ -1,6 +1,7 @@
 import { Container } from "./App.styles"
 import photo1 from "./assets/photo1.png";
 import photo2 from "./assets/photo2.jpeg";
+import pomofocus from "./assets/pomofocus.gif";
 import webstore from "./assets/web-store.gif";
 import phone from "./assets/celular-2.png";
 
@@ -79,26 +80,21 @@ function App() {
             <div className="project-card">
               <h3>Pomofocus</h3>
               <div className="img-wrapper">
-                <img src={webstore} alt="" />
+                <img src={pomofocus} alt="" />
               </div>
-              <p>Plataforma de estudos desenvolvida na Hackathon do Programa de Formação 4 da FCamara.</p>
+              <p>Aplicação baseada no metodo pomodoro, para melhorar produtividade nas tarefas diárias..</p>
               <p>HTML-CSS-JS-React</p>
             </div>
             <div className="project-card">
-              <h3>Pomofocus</h3>
+              <h3>Web-Store</h3>
               <div className="img-wrapper">
                 <img src={webstore} alt="" />
               </div>
-              <p>Plataforma de estudos desenvolvida na Hackathon do Programa de Formação 4 da FCamara.</p>
+              <p>Loja virtual que faz requisições a api do Mercado Livre.</p>
               <p>HTML-CSS-JS-React</p>
             </div>
             <div className="project-card">
-              <h3>Pomofocus</h3>
-              <div className="img-wrapper">
-                <img src={webstore} alt="" />
-              </div>
-              <p>Plataforma de estudos desenvolvida na Hackathon do Programa de Formação 4 da FCamara.</p>
-              <p>HTML-CSS-JS-React</p>
+              <p>Em breve... </p>
             </div>
           </div>
         </div>
