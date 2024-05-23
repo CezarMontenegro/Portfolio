@@ -21,7 +21,6 @@ export const Container = styled.div`
     align-items: center;
     justify-content: space-between;
     max-width: 1024px;
-    border: 1px solid red;
   }
 
   .header .logo {
@@ -243,7 +242,6 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     background-color: rgb(12, 12, 12);
-    border: 1px solid red;
   }
 
   .wrapper-projetos {
@@ -255,7 +253,6 @@ export const Container = styled.div`
     justify-content: space-around;
     max-width: 1024px;
     padding-top: 4rem;
-    border: 1px solid red;
   }
 
   .section-projetos .projetos-header {
@@ -307,7 +304,6 @@ export const Container = styled.div`
   .project-card .img-wrapper {
     width: 250px;
     height: 200px;
-    border: 1px solid red;
   }
 
   .project-card .img-wrapper img {
@@ -329,7 +325,6 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
   }
 
   .wrapper-habilidades {
@@ -340,7 +335,6 @@ export const Container = styled.div`
     align-items: center;
     max-width: 1024px;
     padding-top: 5rem;
-    border: 1px solid red;
   }
 
   .section-habilidades .habilidades-header {
@@ -412,7 +406,6 @@ export const Container = styled.div`
   .section-contato .contato {
     height: 100%;
     width: 50%;
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -483,6 +476,36 @@ export const Container = styled.div`
   @keyframes upDown {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-20px); }
+  }
+
+  footer {
+    width: 100vw;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(12, 12, 12);
+  }
+
+  footer .wrapper {
+    border-top: 1px solid rgb(150, 150, 150);
+  }
+
+  footer .logo {
+    color: #149400;
+    font-size: 2rem;
+  }
+
+  footer ul {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  footer ul li a {
+    text-decoration: none;
+    color: #149400;
+    position: relative;
+    padding: 10px 0;
+    transition: .3s;
   }
 
 
