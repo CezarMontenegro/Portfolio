@@ -1,7 +1,7 @@
 import { Container } from "./App.styles"
 import photo1 from "./assets/photo1.png";
 import photo2 from "./assets/photo2.jpeg";
-import webstore from "./assets/web-store.gif"
+import webstore from "./assets/web-store.gif";
 
 function App() {
   return (
@@ -105,8 +105,17 @@ function App() {
           <div className="habilidades-header">
             <h2>Habilidades</h2>
           </div>
-          <div>
-            
+          <div className="cards">
+            <div className="skill-card">
+              <i className="fa-solid fa-display fa-4x"></i>
+              <h3>Front end</h3>
+              <p>Desenvolvimento de sites responsivos e interativos utilizando tecnologias modernas, como o React e Next, juntamente com bibliotecas populares como Tailwind CSS e Styled Components.</p>
+            </div>
+            <div className="skill-card">
+              <i className="fa-solid fa-database fa-4x"></i>
+              <h3>Back end</h3>
+              <p>Desenvolvimento de soluções no lado do servidor com Node.js e o framework Express. Utilizo abordagens de Desenvolvimento Orientado a Testes (TDD) e arquitetura limpa para criar APIs eficientes e escaláveis.</p>
+            </div>
           </div>
         </div>
       </section>

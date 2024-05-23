@@ -260,7 +260,6 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  border: 1px solid blue;
 }
 
 .section-projetos .projetos-header h2 {
@@ -317,7 +316,7 @@ export const Container = styled.div`
 }
 
 .project-card p {
-  font-size: 18px;
+  font-size: 1.2rem;
   line-height: 1.3;
   color: #FFFFFFa8;
   text-align: center;
@@ -338,7 +337,6 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   max-width: 1024px;
   padding-top: 5rem;
   border: 1px solid red;
@@ -348,7 +346,7 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  border: 1px solid blue;
+  margin-bottom: 30px;
 }
 
 .section-habilidades .habilidades-header h2 {
@@ -357,7 +355,51 @@ export const Container = styled.div`
   font-weight: bold;
 }
 
+.section-habilidades .cards {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
+.section-habilidades .skill-card {
+  background-color: rgb(12, 12, 12);
+  width: 350px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  border-radius: 0.6rem;
+  box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.267);
+  transition: 400ms;
+}
+
+.section-habilidades .skill-card:hover {
+  background-color: rgb(30, 30, 30)
+}
+
+.skill-card i {
+  color: #FFFFFFa8;
+  margin: 0;
+  margin-left: 40px;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.skill-card h3 {
+  color: #149400;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.skill-card p {
+  font-size: 1rem;
+  line-height: 1.3;
+  color: #FFFFFFa8;
+
+}
 
 .section-contato {
   width: 100vw;
