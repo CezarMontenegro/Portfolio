@@ -232,6 +232,7 @@ export const Container = styled.div`
     font-size: 18px;
     line-height: 1.3;
     color: #FFFFFFa8;
+    margin-bottom: 10px;
   }
 
   .section-projetos {
@@ -493,6 +494,10 @@ export const Container = styled.div`
   footer .logo {
     color: #149400;
     font-size: 2rem;
+  }
+
+  footer p {
+    color: #FFFFFFa8;
   }
 
   footer ul {

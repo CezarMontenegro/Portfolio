@@ -64,7 +64,9 @@ function App() {
             </div>
             <div className="about">
               <h2>Sobre mim</h2>
-              <p>isicing elit. Odio recusandae consectetur at labore iste, ex eaque officia obcaecati quos eligendi amet quidem veniam suscipit impedit distinctio enim dolore explicabo sit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis error similique sunt laudantium corrupti incidunt inventore. Minus blanditiis velit eligendi et dignissimos, quas aliquid odio magnam, repellat, laborum nesciunt molestias. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis totam aliquam praesentium optio ducimus? Accusantium officiis rem mollitia iste tempora explicabo laudantium, accusamus modi at doloribus dicta est quae magni?</p>
+              <p> Sou um estudante de programação apaixonado por tecnologia, com foco em JavaScript.</p>
+              <p> No front-end, tenho experiência em HTML, CSS e frameworks como React.js e Next.js onde desenvolvo interfaces de usuário interativas e responsivas. No back-end, estou familiarizado com Node.js e Express, onde crio APIs robustas e escaláveis para suportar minhas aplicações.</p>
+              <p> Meu objetivo é me tornar um desenvolvedor full-stack, capaz de lidar com todas as etapas do desenvolvimento de software, desde a concepção até a implementação e manutenção. Estou sempre em busca de novos desafios e oportunidades para aprender e crescer na área de tecnologia.</p>
             </div>
         </div>
       </section>
