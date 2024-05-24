@@ -477,7 +477,7 @@ export const Container = styled.div`
     margin-bottom: 30px;
   }
 
-  .contato a {
+  .contato .contact-ancora {
     color: #FFFFFFa8;
     text-decoration: none;
     font-size: 1.5rem;
@@ -486,35 +486,36 @@ export const Container = styled.div`
     padding: 15px;
   }
 
-  .contato a:hover {
+  .contato .cards:hover {
     background-color: rgb(30, 30, 30);
     border-radius: 10px;
   }
 
-  .contato a svg {
+  .contato .contact-ancora svg {
     margin-right: 10px;
   }
 
+  .contato a {
+    text-decoration: none;
+  }
+
   .contato button {
-    background-color: rgb(12, 12, 12);
+    background-color: #149400;
     border: 2px solid #149400;
     color: #149400;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    font-weight: bold;
     text-align: center;
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.6rem;
+    gap: 1rem;
     margin-top: 30px;
     cursor: pointer;
     transition: .4s;
     border-radius: 10px;
-  }
-
-  .contato button:hover {
     color: #d1ffca;
-    background-color: #149400;
   }
 
   .section-contato .image {
@@ -548,9 +549,10 @@ export const Container = styled.div`
     border-top: 1px solid rgb(150, 150, 150);
   }
 
-  footer .logo {
+  footer .logo a {
     color: #149400;
     font-size: 2rem;
+    text-decoration: none;
   }
 
   footer p {
