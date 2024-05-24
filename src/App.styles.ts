@@ -292,6 +292,10 @@ export const Container = styled.div`
 
   .project-card:hover {
     background-color: rgb(40, 40, 40);
+    
+    .cover {
+      display: flex;
+    }
   }
 
   .project-card h3 {
@@ -305,6 +309,59 @@ export const Container = styled.div`
   .project-card .img-wrapper {
     width: 250px;
     height: 150px;
+    min-width: 250px;
+    min-height: 150px;
+    position: relative;
+    transition: .3s;
+  }
+
+  .cover {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    align-items: center;
+    justify-content: space-around;
+    display: none;
+    background-color: rgba(60, 60, 60, .5);
+    padding: 0 40px;
+  }
+
+  .cover a {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+
+  .cover a svg{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+  }
+
+  .cover a svg path:first-child {
+    color: white;
+  }
+
+  .cover a svg path:last-child {
+    color: black;
+  }
+
+  .cover a:hover {
+    background-color: black;
+
+    svg path:first-child {
+      color: black;
+    }
+
+    svg path:last-child {
+      color: white;
+    }
   }
 
   .project-card .img-wrapper img {
