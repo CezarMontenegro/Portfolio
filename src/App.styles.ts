@@ -156,12 +156,14 @@ export const Container = styled.div`
     }
   }
 
+  .about a {
+    text-decoration: none;
+  }
+
   .about button {
-    background: none;
     border: 0.2rem solid #149400;
     padding: 1rem 2rem;
     width: fit-content;
-    color: #149400;
     font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -172,11 +174,8 @@ export const Container = styled.div`
     transition: .4s;
     cursor: pointer;
     border-radius: 10px;
-  }
-
-  .about button:hover {
-    color: #d1ffca;
     background-color: #149400;
+    color: #d1ffca;
   }
 
   .section-one .photo {
