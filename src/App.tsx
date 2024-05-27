@@ -41,6 +41,14 @@ function App() {
               </li>
             </ul>
           </div>
+          <nav className="hamburguer-menu">
+            <ul>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#projetos">Projetos</a></li>
+              <li><a href="#habilidades">Habilidades</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </nav>
         </div>
       </header>
       <section id="section-one" className="section-one">

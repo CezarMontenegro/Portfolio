@@ -25,12 +25,6 @@ export const Container = styled.div`
     max-width: 1024px;
   }
 
-  @media screen and (max-width: 1024px) {
-    .wrapper {
-      padding: 0 20px;
-    }
-  }
-
   .header .logo {
     font-size: 2.5em;
     font-family: "Manjari", sans-serif;
@@ -41,12 +35,10 @@ export const Container = styled.div`
   .header .logo a {
     text-decoration: none;
     color: #149400;
-
   }
 
   .header .logo a:hover {
     color: #22ff00;
-
   }
 
   .header .nav {
@@ -109,6 +101,50 @@ export const Container = styled.div`
   .header .social svg:hover {
     color: #22ff00;
   }
+
+  @media screen and (max-width: 1024px) {
+    .wrapper {
+      padding: 0 20px;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .header .nav, .header .social {
+      display: none;
+    }
+  }
+
+  /* ---menu-hamburguer---- */
+
+  .header .hamburguer-menu {
+    display: none;
+  }
+
+  /* @media screen and (max-width: 425px) {
+    .header .hamburguer-menu {
+      background-color: green;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 1000;
+      width: 70%;
+      display: block;
+    }
+
+    .hamburguer-menu ul {
+      text-align: right;
+    }
+  }
+
+  .hamburguer-menu ul li a {
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    padding: 20px 40px;
+    display: block;
+    text-decoration: none;
+  } */
+
 
   /* ---section-one---- */
 
