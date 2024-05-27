@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
 
+   /* ---header---- */
+
   .header {
     background-color: transparent;
     backdrop-filter: blur(5px);
@@ -21,6 +23,12 @@ export const Container = styled.div`
     align-items: center;
     justify-content: space-between;
     max-width: 1024px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .wrapper {
+      padding: 0 20px;
+    }
   }
 
   .header .logo {
@@ -101,6 +109,8 @@ export const Container = styled.div`
   .header .social svg:hover {
     color: #22ff00;
   }
+
+  /* ---section-one---- */
 
   .section-one {
     width: 100vw;
@@ -196,15 +206,71 @@ export const Container = styled.div`
     width: 350px;
   }
 
+  @media screen and (max-width: 768px) {
+    .section-one {
+      border: 1px solid blue;
+    }
+
+    .section-one .photo {
+      width: 40%;
+    }
+
+    .section-one .photo img {
+      width: 250px;
+    }
+
+    .section-one .about {
+      width: 60%;
+    }
+
+    .section-one .about p:first-child {
+      font-size: 1.3rem;
+    }
+
+    .section-one .about p:nth-child(2) {
+      font-size: 4rem;
+    }
+
+    .typing-demo {
+      font-size: 1.6em;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .section-one .wrapper{
+      border: 1px solid yellow;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .section-one .photo {
+      width: 100%;
+    }
+
+    .section-one .about {
+      border: 1px solid red;
+      width: 100%;
+    }
+
+    .section-one .about p:nth-child(2) {
+      font-size: 3rem;
+    }
+  }
+
+   /* ---section-sobre---- */
+
   .section-sobre {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid green;
   }
 
   .section-sobre .photo{
+    border: 1px solid red;
     width: 50%;
     display: flex;
     justify-content: flex-start;
@@ -218,6 +284,7 @@ export const Container = styled.div`
   .section-sobre .about {
     width: 50%;
     padding: 0 20px;
+    border: 1px solid red;
   }
 
   .section-sobre .about h2 {
@@ -233,6 +300,44 @@ export const Container = styled.div`
     color: #FFFFFFa8;
     margin-bottom: 10px;
   }
+
+  @media screen and (max-width: 768px) {
+    .section-sobre .wrapper {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 20px 0;
+    }
+
+    .section-sobre .about {
+      width: 70%;
+    }
+
+    .section-sobre .about h2 {
+      border: 1px solid red;
+      text-align: center;
+    }
+
+    .section-sobre .photo {
+      order: 2;
+      width: 70%;
+    }
+
+    .section-sobre .photo img {
+      width: 100%
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .header {
+      /* display: none; */
+    }
+
+    .section-sobre {
+      border: 1px solid blue;
+    }
+  }
+
+
 
   .section-projetos {
     width: 100vw;
@@ -255,6 +360,12 @@ export const Container = styled.div`
     padding-top: 4rem;
   }
 
+  @media screen and (max-width: 1024px) {
+    .wrapper-projetos {
+      margin: 0 20px;
+    }
+  }
+
   .section-projetos .projetos-header {
     width: 100%;
     display: flex;
@@ -275,8 +386,8 @@ export const Container = styled.div`
   }
 
   .project-card {
-    width: 330px;
-    height: 500px;
+    width: 300px;
+    height: 450px;
     background-color: rgb(25, 25, 25);
     display: flex;
     flex-direction: column;
