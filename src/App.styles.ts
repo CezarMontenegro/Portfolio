@@ -4,8 +4,8 @@ export const Main = styled.main`
    /* ---header---- */
 
   .header {
-    background-color: transparent;
-    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(1rem);
     height: 4.5rem;
     width: 100%;
     color: #149400;
@@ -13,7 +13,7 @@ export const Main = styled.main`
     align-items: center;
     justify-content: center;
     position: fixed;
-    z-index: 999;
+    z-index: 5;
   }
 
   .wrapper {
@@ -138,30 +138,38 @@ export const Main = styled.main`
     display: none;
   }
 
-  /* @media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     .header .hamburguer-menu {
-      background-color: green;
-      height: 100vh;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(1rem);
+      -webkit-backdrop-filter: blur(10px);
+      height: calc(100vh - 4.5rem);
+      margin-top: 4.51rem;
       position: fixed;
       top: 0;
       right: 0;
-      z-index: 1000;
-      width: 70%;
-      display: block;
+      z-index: 999;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid red;
     }
 
     .hamburguer-menu ul {
-      text-align: right;
+      text-align: center;
     }
-  }
 
-  .hamburguer-menu ul li a {
+    .hamburguer-menu ul li a {
     color: rgb(255, 255, 255);
     font-size: 1.2rem;
     padding: 20px 40px;
     display: block;
     text-decoration: none;
-  } */
+  }
+  }
+
+
 
 
   /* ---section-one---- */

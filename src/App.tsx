@@ -12,8 +12,7 @@ import phone from "./assets/celular-2.png";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  
-  console.log(isMenuOpen);
+
   return (
     <Main>
       <header className="header">
@@ -49,17 +48,17 @@ function App() {
               </li>
             </ul>
           </div>
-          <div className="hamburguer-icon" onClick={(prev) => setIsMenuOpen(!prev)}>
+          <div className="hamburguer-icon" onClick={() => setIsMenuOpen((prev) => !prev)}>
             <i className="fa-solid fa-bars"></i>
           </div>
-          <nav className="hamburguer-menu">
+          {isMenuOpen && <nav className="hamburguer-menu">
             <ul>
-              <li><a href="#sobre">Sobre</a></li>
-              <li><a href="#projetos">Projetos</a></li>
-              <li><a href="#habilidades">Habilidades</a></li>
-              <li><a href="#contato">Contato</a></li>
+              <li onClick={() => setIsMenuOpen(false)}><a href="#sobre">Sobre</a></li>
+              <li onClick={() => setIsMenuOpen(false)}><a href="#projetos">Projetos</a></li>
+              <li onClick={() => setIsMenuOpen(false)}><a href="#habilidades">Habilidades</a></li>
+              <li onClick={() => setIsMenuOpen(false)}><a href="#contato">Contato</a></li>
             </ul>
-          </nav>
+          </nav>}
         </div>
       </header>
       <section id="section-one" className="section-one">
