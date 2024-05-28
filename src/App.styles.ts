@@ -23,7 +23,6 @@ export const Main = styled.main`
     align-items: center;
     justify-content: space-between;
     max-width: 1024px;
-    border: 1px solid blue;
   }
 
   .header .logo {
@@ -110,6 +109,8 @@ export const Main = styled.main`
   }
 
   @media screen and (max-width: 425px) {
+
+
     .header .nav, .header .social {
       display: none;
     }
@@ -244,10 +245,6 @@ export const Main = styled.main`
   }
 
   @media screen and (max-width: 768px) {
-    .section-one {
-      border: 1px solid blue;
-    }
-
     .section-one .photo {
       width: 40%;
     }
@@ -280,6 +277,13 @@ export const Main = styled.main`
       justify-content: center;
     }
 
+    .section-one .about {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 2rem 0;
+    }
+
     .section-one .photo {
       width: 100%;
     }
@@ -301,7 +305,6 @@ export const Main = styled.main`
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid white;
   }
 
   .section-sobre .wrapper {
@@ -313,6 +316,7 @@ export const Main = styled.main`
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 5rem;
   }
 
   .section-sobre .sobre-header h2 {
@@ -352,8 +356,6 @@ export const Main = styled.main`
   }
 
   @media screen and (max-width: 768px) {
-
-
     .section-sobre .wrapper {
     gap: 1rem;
   }
@@ -381,16 +383,6 @@ export const Main = styled.main`
     }
   }
 
-  @media screen and (max-width: 425px) {
-    .header {
-      /* display: none; */
-    }
-
-    .section-sobre {
-      border: 1px solid blue;
-    }
-  }
-
    /* ---section-projetos---- */
 
   .section-projetos {
@@ -400,7 +392,6 @@ export const Main = styled.main`
     align-items: center;
     justify-content: center;
     background-color: rgb(12, 12, 12);
-    border: 1px solid white;
   }
 
   .section-projetos .wrapper {
@@ -418,6 +409,7 @@ export const Main = styled.main`
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 5rem;
   }
 
   .section-projetos .projetos-header h2 {
@@ -542,8 +534,6 @@ export const Main = styled.main`
   }
 
   @media screen and (max-width: 768px) {
-
-
     .section-projetos .cards {
       justify-content: space-around;
     }
@@ -553,7 +543,7 @@ export const Main = styled.main`
 
   .section-habilidades {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -596,7 +586,7 @@ export const Main = styled.main`
     height: 350px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding: 20px;
     border-radius: 0.6rem;
     box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.267);
@@ -610,7 +600,7 @@ export const Main = styled.main`
   .skill-card i {
     color: #FFFFFFa8;
     margin: 0;
-    margin-left: 40px;
+    margin-left: 20px;
     padding: 0;
     margin-bottom: 30px;
   }
@@ -625,16 +615,26 @@ export const Main = styled.main`
     font-size: 1rem;
     line-height: 1.3;
     color: #FFFFFFa8;
+    text-align: center;
   }
+
+  @media screen and (max-width:425px) {
+    .section-habilidades .cards {
+      flex-direction: column;
+    }
+  }
+
+    /* ---section-contato---- */
 
   .section-contato {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background-color: rgb(12, 12, 12);
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
   .section-contato .contato {
     height: 100%;
     width: 50%;
@@ -643,6 +643,7 @@ export const Main = styled.main`
     align-items: flex-start;
     justify-content: center;
     padding-left: 50px;
+    margin-top: 5rem;
   }
 
   .contato h2 {
@@ -711,6 +712,29 @@ export const Main = styled.main`
     50% { transform: translateY(-30px); }
   }
 
+  @media screen and (max-width: 425px) {
+    .section-contato .wrapper{
+      flex-direction: column;
+      gap: 3rem;
+    }
+
+    .section-contato .contato {
+      width: 90%;
+      align-items: center;
+      padding-left: 0;
+    }
+
+    .contato .contact-ancora {
+      font-size: 1.1rem;
+    }
+
+    .section-contato .image {
+      display: none;
+    }
+  }
+
+    /* ---section-contato---- */
+
   footer {
     width: 100vw;
     height: 5rem;
@@ -746,6 +770,10 @@ export const Main = styled.main`
     transition: .3s;
   }
 
-
+  @media screen and (max-width: 425px) {
+    footer p {
+      font-size: .7rem;
+    }
+  }
 
 `
