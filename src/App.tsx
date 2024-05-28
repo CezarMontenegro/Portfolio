@@ -1,4 +1,4 @@
-import { Container } from "./App.styles"
+import { Main } from "./App.styles"
 import photo1 from "./assets/photo1.png";
 import photo2 from "./assets/photo2.jpeg";
 import pomofocus from "./assets/pomofocus.gif";
@@ -7,7 +7,7 @@ import phone from "./assets/celular-2.png";
 
 function App() {
   return (
-    <Container>
+    <Main>
       <header className="header">
         <div className="wrapper">
           <div className="logo"><a href="#section-one">&lt;\Cezar&gt;</a></div>
@@ -213,7 +213,7 @@ function App() {
           </div>
         </div>
       </footer>
-    </Container>
+    </Main>
   )
 }
 

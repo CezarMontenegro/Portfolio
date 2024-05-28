@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Main = styled.main`
 
    /* ---header---- */
 
   .header {
-    background-color: transparent;
+    background-color: green;
     backdrop-filter: blur(5px);
     height: 4.5rem;
     width: 100%;
@@ -14,6 +14,8 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     position: fixed;
+    top: 0;
+    z-index: 999;
   }
 
   .wrapper {
@@ -149,12 +151,14 @@ export const Container = styled.div`
   /* ---section-one---- */
 
   .section-one {
+    border: 1px solid red;
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 4.5rem);
     background-color: rgb(12, 12, 12);
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 4.5rem;
   }
 
   .section-one .about {
@@ -298,7 +302,7 @@ export const Container = styled.div`
 
   .section-sobre {
     width: 100vw;
-    min-height: 100vh;
+    min-height: calc(100vh - 4.5rem);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -377,8 +381,7 @@ export const Container = styled.div`
 
   .section-projetos {
     width: 100vw;
-    height: 100vh;
-    min-height: 100vh;
+    height: calc(100vh - 4.5rem);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -525,7 +528,7 @@ export const Container = styled.div`
 
   .section-habilidades {
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 4.5rem);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -601,7 +604,7 @@ export const Container = styled.div`
 
   .section-contato {
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 4.5rem);
     background-color: rgb(12, 12, 12);
     display: flex;
     align-items: center;
