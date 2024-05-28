@@ -150,7 +150,6 @@ export const Main = styled.main`
   /* ---section-one---- */
 
   .section-one {
-    border: 1px solid red;
     width: 100vw;
     height: 100vh;
     background-color: rgb(12, 12, 12);
@@ -276,7 +275,6 @@ export const Main = styled.main`
 
   @media screen and (max-width: 425px) {
     .section-one .wrapper{
-      border: 1px solid yellow;
       flex-direction: column;
       align-items: center;
       justify-content: center;
@@ -287,7 +285,6 @@ export const Main = styled.main`
     }
 
     .section-one .about {
-      border: 1px solid red;
       width: 100%;
     }
 
@@ -300,16 +297,38 @@ export const Main = styled.main`
 
   .section-sobre {
     width: 100vw;
-    height: 100vh;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid green;
+    border: 1px solid white;
+  }
+
+  .section-sobre .wrapper {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .section-sobre .sobre-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .section-sobre .sobre-header h2 {
+    color: #149400;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 10px 0 30px;
+  }
+
+  .section-sobre .wrapper .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .section-sobre .photo{
-    border: 1px solid red;
     width: 50%;
     display: flex;
     justify-content: flex-start;
@@ -323,14 +342,6 @@ export const Main = styled.main`
   .section-sobre .about {
     width: 50%;
     padding: 0 20px;
-    border: 1px solid red;
-  }
-
-  .section-sobre .about h2 {
-    color: #149400;
-    font-size: 3rem;
-    font-weight: bold;
-    margin: 10px 0 30px;
   }
 
   .section-sobre .about p {
@@ -341,28 +352,32 @@ export const Main = styled.main`
   }
 
   @media screen and (max-width: 768px) {
+
+
     .section-sobre .wrapper {
+    gap: 1rem;
+  }
+
+    .section-sobre .content {
       flex-direction: column;
       gap: 1rem;
-      padding: 20px 0;
     }
 
     .section-sobre .about {
       width: 70%;
-    }
-
-    .section-sobre .about h2 {
-      border: 1px solid red;
       text-align: center;
     }
 
     .section-sobre .photo {
       order: 2;
       width: 70%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
     }
 
     .section-sobre .photo img {
-      width: 100%
+      width: 80%
     }
   }
 
@@ -380,15 +395,15 @@ export const Main = styled.main`
 
   .section-projetos {
     width: 100vw;
-    height: 100vh;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgb(12, 12, 12);
+    border: 1px solid white;
   }
 
-  .wrapper-projetos {
+  .section-projetos .wrapper {
     width: 1024px;
     height: 100%;
     display: flex;
@@ -396,13 +411,7 @@ export const Main = styled.main`
     align-items: center;
     justify-content: space-around;
     max-width: 1024px;
-    padding-top: 4rem;
-  }
-
-  @media screen and (max-width: 1024px) {
-    .wrapper-projetos {
-      margin: 0 20px;
-    }
+    gap: 5em;
   }
 
   .section-projetos .projetos-header {
@@ -526,6 +535,20 @@ export const Main = styled.main`
     text-align: center;
   }
 
+    @media screen and (max-width: 1024px) {
+    .wrapper-projetos {
+      margin: 0 20px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+
+
+    .section-projetos .cards {
+      justify-content: space-around;
+    }
+  }
+
    /* ---section-habilidades---- */
 
   .section-habilidades {
@@ -536,7 +559,7 @@ export const Main = styled.main`
     justify-content: center;
   }
 
-  .wrapper-habilidades {
+  .section-habilidades .wrapper {
     width: 1024px;
     height: 100%;
     display: flex;

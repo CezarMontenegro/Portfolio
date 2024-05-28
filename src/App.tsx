@@ -70,19 +70,23 @@ function App() {
       </section>
       <section id="sobre" className="section-sobre">
         <div className="wrapper">
-            <div className="photo">
-              <img src={photo2} alt="" />
-            </div>
-            <div className="about">
-              <h2>Sobre mim</h2>
-              <p> Sou um estudante de programação apaixonado por tecnologia, com foco em JavaScript.</p>
-              <p> No front-end, tenho experiência em HTML, CSS e frameworks como React.js e Next.js onde desenvolvo interfaces de usuário interativas e responsivas. No back-end, estou familiarizado com Node.js e Express, onde crio APIs robustas e escaláveis para suportar minhas aplicações.</p>
-              <p> Meu objetivo é me tornar um desenvolvedor full-stack, capaz de lidar com todas as etapas do desenvolvimento de software, desde a concepção até a implementação e manutenção. Estou sempre em busca de novos desafios e oportunidades para aprender e crescer na área de tecnologia.</p>
+          <div className="sobre-header">
+            <h2>Sobre mim</h2>
+          </div>
+            <div className="content">
+              <div className="photo">
+                <img src={photo2} alt="" />
+              </div>
+              <div className="about">
+                <p> Sou estudante de programação apaixonado por tecnologia, com ênfase em JavaScript.</p>
+                <p> No front-end, tenho experiência em HTML, CSS e frameworks como React.js e Next.js onde desenvolvo interfaces de usuário interativas e responsivas. No back-end, estou familiarizado com Node.js e Express, onde crio APIs robustas e escaláveis para suportar minhas aplicações.</p>
+                <p> Meu objetivo é me tornar um desenvolvedor full-stack, capaz de lidar com todas as etapas do desenvolvimento de software, desde a concepção até a implementação e manutenção. Estou sempre em busca de novos desafios e oportunidades para aprender e crescer na área de tecnologia.</p>
+              </div>
             </div>
         </div>
       </section>
       <section id="projetos" className="section-projetos">
-        <div className="wrapper-projetos">
+        <div className="wrapper">
           <div className="projetos-header">
             <h2>Projetos</h2>
           </div>
@@ -138,7 +142,7 @@ function App() {
         </div>
       </section>
       <section id="habilidades" className="section-habilidades">
-        <div className="wrapper-habilidades">
+        <div className="wrapper">
           <div className="habilidades-header">
             <h2>Habilidades</h2>
           </div>
