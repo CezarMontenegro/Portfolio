@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Main } from "./App.styles"
 import photo1 from "./assets/photo1.png";
 import photo2 from "./assets/photo2.jpeg";
@@ -5,7 +6,14 @@ import pomofocus from "./assets/pomofocus.gif";
 import webstore from "./assets/web-store.gif";
 import phone from "./assets/celular-2.png";
 
+
+
+
+
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
+  console.log(isMenuOpen);
   return (
     <Main>
       <header className="header">
@@ -40,6 +48,9 @@ function App() {
                 </a>
               </li>
             </ul>
+          </div>
+          <div className="hamburguer-icon" onClick={(prev) => setIsMenuOpen(!prev)}>
+            <i className="fa-solid fa-bars"></i>
           </div>
           <nav className="hamburguer-menu">
             <ul>

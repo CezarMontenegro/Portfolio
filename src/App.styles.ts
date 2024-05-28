@@ -102,17 +102,33 @@ export const Main = styled.main`
     color: #22ff00;
   }
 
+  .header .hamburguer-icon {
+    display: none;
+  }
+
   @media screen and (max-width: 1024px) {
     .wrapper {
       padding: 0 20px;
     }
   }
 
-  @media screen and (max-width: 425px) {
-
+  @media screen and (max-width: 768px) {
+    .header .logo a {
+      font-size: 2rem;
+    }
 
     .header .nav, .header .social {
       display: none;
+    }
+
+    .header .hamburguer-icon {
+      display: block;
+      font-size: 1.6rem;
+      cursor: pointer;
+    }
+
+    .header .hamburguer-icon:hover {
+      color: #22ff00;
     }
   }
 
@@ -122,7 +138,7 @@ export const Main = styled.main`
     display: none;
   }
 
-  /* @media screen and (max-width: 425px) {
+  /* @media screen and (max-width: 768px) {
     .header .hamburguer-menu {
       background-color: green;
       height: 100vh;
@@ -270,7 +286,7 @@ export const Main = styled.main`
     }
   }
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 768px) {
     .section-one .wrapper{
       flex-direction: column;
       align-items: center;
@@ -618,9 +634,10 @@ export const Main = styled.main`
     text-align: center;
   }
 
-  @media screen and (max-width:425px) {
+  @media screen and (max-width:768px) {
     .section-habilidades .cards {
       flex-direction: column;
+      gap: 1rem;
     }
   }
 
@@ -712,7 +729,7 @@ export const Main = styled.main`
     50% { transform: translateY(-30px); }
   }
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 768px) {
     .section-contato .wrapper{
       flex-direction: column;
       gap: 3rem;
@@ -770,7 +787,7 @@ export const Main = styled.main`
     transition: .3s;
   }
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 768px) {
     footer p {
       font-size: .7rem;
     }
