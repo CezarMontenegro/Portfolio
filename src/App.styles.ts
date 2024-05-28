@@ -1,11 +1,10 @@
 import styled from "styled-components";
 
 export const Main = styled.main`
-
    /* ---header---- */
 
   .header {
-    background-color: green;
+    background-color: transparent;
     backdrop-filter: blur(5px);
     height: 4.5rem;
     width: 100%;
@@ -14,7 +13,6 @@ export const Main = styled.main`
     align-items: center;
     justify-content: center;
     position: fixed;
-    top: 0;
     z-index: 999;
   }
 
@@ -25,6 +23,7 @@ export const Main = styled.main`
     align-items: center;
     justify-content: space-between;
     max-width: 1024px;
+    border: 1px solid blue;
   }
 
   .header .logo {
@@ -153,12 +152,11 @@ export const Main = styled.main`
   .section-one {
     border: 1px solid red;
     width: 100vw;
-    height: calc(100vh - 4.5rem);
+    height: 100vh;
     background-color: rgb(12, 12, 12);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 4.5rem;
   }
 
   .section-one .about {
@@ -302,7 +300,8 @@ export const Main = styled.main`
 
   .section-sobre {
     width: 100vw;
-    min-height: calc(100vh - 4.5rem);
+    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -377,11 +376,12 @@ export const Main = styled.main`
     }
   }
 
-
+   /* ---section-projetos---- */
 
   .section-projetos {
     width: 100vw;
-    height: calc(100vh - 4.5rem);
+    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -526,9 +526,11 @@ export const Main = styled.main`
     text-align: center;
   }
 
+   /* ---section-habilidades---- */
+
   .section-habilidades {
     width: 100vw;
-    height: calc(100vh - 4.5rem);
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -604,7 +606,7 @@ export const Main = styled.main`
 
   .section-contato {
     width: 100vw;
-    height: calc(100vh - 4.5rem);
+    height: 100vh;
     background-color: rgb(12, 12, 12);
     display: flex;
     align-items: center;
