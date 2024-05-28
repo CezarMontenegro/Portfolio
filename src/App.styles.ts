@@ -4,7 +4,7 @@ export const Main = styled.main`
    /* ---header---- */
 
   .header {
-    background: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(1rem);
     height: 4.5rem;
     width: 100%;
@@ -139,8 +139,10 @@ export const Main = styled.main`
   }
 
   @media screen and (max-width: 768px) {
+    .header {}
+
     .header .hamburguer-menu {
-      background: rgba(0, 0, 0, 0.7);
+      background-color: rgba(0, 0, 0, 0.7);
       backdrop-filter: blur(1rem);
       -webkit-backdrop-filter: blur(10px);
       height: calc(100vh - 4.5rem);
@@ -153,7 +155,6 @@ export const Main = styled.main`
       display: flex;
       justify-content: center;
       align-items: center;
-      border: 1px solid red;
     }
 
     .hamburguer-menu ul {
