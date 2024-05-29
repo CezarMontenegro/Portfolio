@@ -162,12 +162,12 @@ export const Main = styled.main`
     }
 
     .hamburguer-menu ul li a {
-    color: rgb(255, 255, 255);
-    font-size: 1.2rem;
-    padding: 20px 40px;
-    display: block;
-    text-decoration: none;
-  }
+      color: rgb(255, 255, 255);
+      font-size: 1.2rem;
+      padding: 20px 40px;
+      display: block;
+      text-decoration: none;
+    }
   }
 
 
@@ -579,16 +579,16 @@ export const Main = styled.main`
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: space-between;
     max-width: 1024px;
-    padding-top: 5rem;
+    gap: 7rem;
   }
 
   .section-habilidades .habilidades-header {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
   }
 
   .section-habilidades .habilidades-header h2 {
@@ -644,6 +644,10 @@ export const Main = styled.main`
   }
 
   @media screen and (max-width:768px) {
+    .section-habilidades .wrapper {
+      gap: 3rem;
+    }
+
     .section-habilidades .cards {
       flex-direction: column;
       gap: 1rem;
@@ -750,6 +754,10 @@ export const Main = styled.main`
       padding-left: 0;
     }
 
+    .section-contato .contato h2 {
+      margin-bottom: 11rem;
+    }
+
     .contato .contact-ancora {
       font-size: 1.1rem;
     }
@@ -797,8 +805,12 @@ export const Main = styled.main`
   }
 
   @media screen and (max-width: 768px) {
+    footer .logo a {
+      font-size: 1.5rem;
+    }
+
     footer p {
-      font-size: .7rem;
+      font-size: .5rem;
     }
   }
 
