@@ -734,7 +734,7 @@ export const Main = styled.main`
     padding: 15px;
   }
 
-  .contato .cards:hover {
+  .contato .contact-ancora:hover {
     background-color: rgb(30, 30, 30);
     border-radius: 10px;
   }
