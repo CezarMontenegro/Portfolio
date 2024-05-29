@@ -61,7 +61,7 @@ function App() {
             className="hamburguer-icon"
             onClick={() => setIsMenuOpen((prev) => !prev)}
           >
-            <i className="fa-solid fa-bars"></i>
+            {isMenuOpen ? <i className="fas fa-times"></i> : <i className="fa-solid fa-bars"></i>}
           </div>
         </div>
       </header>

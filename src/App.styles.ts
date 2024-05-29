@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Main = styled.main`
-   /* ---header---- */
+  /* ---header---- */
 
   .header {
     background-color: rgba(0, 0, 0, 0.7);
@@ -43,7 +43,7 @@ export const Main = styled.main`
 
   .header .nav {
     font-size: 1rem;
-    min-width:430px;
+    min-width: 430px;
     height: 70px;
     width: 430px;
     display: flex;
@@ -61,14 +61,16 @@ export const Main = styled.main`
     color: #149400;
     position: relative;
     padding: 10px 0;
-    transition: .3s;
+    transition: 0.3s;
   }
 
   .nav ul li a:hover {
     color: #22ff00;
   }
 
-  .nav ul li a::after, .header .logo::after, .social a::after {
+  .nav ul li a::after,
+  .header .logo::after,
+  .social a::after {
     content: " ";
     width: 0%;
     height: 2px;
@@ -76,10 +78,12 @@ export const Main = styled.main`
     position: absolute;
     bottom: 0;
     left: 0;
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
   }
 
-  .nav ul li a:hover::after, .header .logo:hover::after, .social a:hover::after {
+  .nav ul li a:hover::after,
+  .header .logo:hover::after,
+  .social a:hover::after {
     width: 100%;
   }
 
@@ -106,6 +110,10 @@ export const Main = styled.main`
     display: none;
   }
 
+  .header .hamburguer-icon .fa-times {
+    font-size: 2rem;
+  }
+
   @media screen and (max-width: 1024px) {
     .wrapper {
       padding: 0 20px;
@@ -117,7 +125,8 @@ export const Main = styled.main`
       font-size: 2rem;
     }
 
-    .header .nav, .header .social {
+    .header .nav,
+    .header .social {
       display: none;
     }
 
@@ -155,6 +164,29 @@ export const Main = styled.main`
       justify-content: center;
       align-items: center;
       gap: 3rem;
+      animation: menu-opening .6s ease-in;
+    }
+
+    @keyframes menu-opening {
+      from {
+        height: 0px;
+      }
+      to {
+        height: calc(100vh - 4.5rem);
+      }
+    }
+
+    @keyframes opacity-increaser {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .floating-menu-nav, .floating-menu-social {
+      animation: opacity-increaser .8s ease-in;
     }
 
     .floating-menu-nav ul {
@@ -217,25 +249,25 @@ export const Main = styled.main`
 
   .typing-demo {
     width: 27ch;
-    animation: typing 2s steps(27), blink .5s step-end infinite alternate;
+    animation: typing 2s steps(27), blink 0.5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid #149400;
     font-family: monospace;
     font-size: 2em;
-    color: #FFFFFFa8;
+    color: #ffffffa8;
     margin-bottom: 2rem;
   }
 
   @keyframes typing {
     from {
-      width: 0
+      width: 0;
     }
   }
-      
+
   @keyframes blink {
     50% {
-      border-color: transparent
+      border-color: transparent;
     }
   }
 
@@ -254,7 +286,7 @@ export const Main = styled.main`
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: .4s;
+    transition: 0.4s;
     cursor: pointer;
     border-radius: 10px;
     background-color: #149400;
@@ -266,14 +298,14 @@ export const Main = styled.main`
     display: flex;
     justify-content: center;
     align-items: center;
-    }
+  }
 
   .section-one .photo img {
     border-radius: 50%;
     width: 300px;
     background-color: #149400;
-    transition: .3s;
-}
+    transition: 0.3s;
+  }
 
   .section-one .photo img:hover {
     width: 350px;
@@ -306,7 +338,7 @@ export const Main = styled.main`
   }
 
   @media screen and (max-width: 768px) {
-    .section-one .wrapper{
+    .section-one .wrapper {
       flex-direction: column;
       align-items: center;
       justify-content: center;
@@ -332,7 +364,7 @@ export const Main = styled.main`
     }
   }
 
-   /* ---section-sobre---- */
+  /* ---section-sobre---- */
 
   .section-sobre {
     width: 100vw;
@@ -361,13 +393,13 @@ export const Main = styled.main`
     margin: 10px 0 30px;
   }
 
-  .section-sobre .wrapper .content{
+  .section-sobre .wrapper .content {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .section-sobre .photo{
+  .section-sobre .photo {
     width: 50%;
     display: flex;
     justify-content: flex-start;
@@ -386,14 +418,14 @@ export const Main = styled.main`
   .section-sobre .about p {
     font-size: 18px;
     line-height: 1.3;
-    color: #FFFFFFa8;
+    color: #ffffffa8;
     margin-bottom: 10px;
   }
 
   @media screen and (max-width: 768px) {
     .section-sobre .wrapper {
-    gap: 1rem;
-  }
+      gap: 1rem;
+    }
 
     .section-sobre .content {
       flex-direction: column;
@@ -414,11 +446,11 @@ export const Main = styled.main`
     }
 
     .section-sobre .photo img {
-      width: 80%
+      width: 80%;
     }
   }
 
-   /* ---section-projetos---- */
+  /* ---section-projetos---- */
 
   .section-projetos {
     width: 100vw;
@@ -472,12 +504,12 @@ export const Main = styled.main`
     padding: 2rem;
     border-radius: 5px;
     box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.267);
-    transition: .3s;
+    transition: 0.3s;
   }
 
   .project-card:hover {
     background-color: rgb(40, 40, 40);
-    
+
     .cover {
       display: flex;
     }
@@ -488,7 +520,7 @@ export const Main = styled.main`
     height: 50px;
     font-size: 1.5rem;
     text-align: center;
-    color: #FFFFFFa8;
+    color: #ffffffa8;
   }
 
   .project-card .img-wrapper {
@@ -497,7 +529,7 @@ export const Main = styled.main`
     min-width: 250px;
     min-height: 150px;
     position: relative;
-    transition: .3s;
+    transition: 0.3s;
   }
 
   .cover {
@@ -509,7 +541,7 @@ export const Main = styled.main`
     align-items: center;
     justify-content: space-around;
     display: none;
-    background-color: rgba(60, 60, 60, .5);
+    background-color: rgba(60, 60, 60, 0.5);
     padding: 0 40px;
   }
 
@@ -523,7 +555,7 @@ export const Main = styled.main`
     background-color: white;
   }
 
-  .cover a svg{
+  .cover a svg {
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 50%;
@@ -558,11 +590,11 @@ export const Main = styled.main`
   .project-card p {
     font-size: 1.2rem;
     line-height: 1.3;
-    color: #FFFFFFa8;
+    color: #ffffffa8;
     text-align: center;
   }
 
-    @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1024px) {
     .wrapper-projetos {
       margin: 0 20px;
     }
@@ -574,7 +606,7 @@ export const Main = styled.main`
     }
   }
 
-   /* ---section-habilidades---- */
+  /* ---section-habilidades---- */
 
   .section-habilidades {
     width: 100vw;
@@ -629,11 +661,11 @@ export const Main = styled.main`
   }
 
   .section-habilidades .skill-card:hover {
-    background-color: rgb(30, 30, 30)
+    background-color: rgb(30, 30, 30);
   }
 
   .skill-card i {
-    color: #FFFFFFa8;
+    color: #ffffffa8;
     margin: 0;
     margin-left: 20px;
     padding: 0;
@@ -649,11 +681,11 @@ export const Main = styled.main`
   .skill-card p {
     font-size: 1rem;
     line-height: 1.3;
-    color: #FFFFFFa8;
+    color: #ffffffa8;
     text-align: center;
   }
 
-  @media screen and (max-width:768px) {
+  @media screen and (max-width: 768px) {
     .section-habilidades .wrapper {
       gap: 3rem;
     }
@@ -664,7 +696,7 @@ export const Main = styled.main`
     }
   }
 
-    /* ---section-contato---- */
+  /* ---section-contato---- */
 
   .section-contato {
     width: 100vw;
@@ -693,7 +725,7 @@ export const Main = styled.main`
   }
 
   .contato .contact-ancora {
-    color: #FFFFFFa8;
+    color: #ffffffa8;
     text-decoration: none;
     font-size: 1.5rem;
     display: flex;
@@ -728,7 +760,7 @@ export const Main = styled.main`
     gap: 1rem;
     margin-top: 30px;
     cursor: pointer;
-    transition: .4s;
+    transition: 0.4s;
     border-radius: 10px;
     color: #d1ffca;
   }
@@ -748,12 +780,17 @@ export const Main = styled.main`
   }
 
   @keyframes upDown {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-30px); }
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
   }
 
   @media screen and (max-width: 768px) {
-    .section-contato .wrapper{
+    .section-contato .wrapper {
       flex-direction: column;
       gap: 3rem;
     }
@@ -777,7 +814,7 @@ export const Main = styled.main`
     }
   }
 
-    /* ---section-contato---- */
+  /* ---section-contato---- */
 
   footer {
     width: 100vw;
@@ -798,7 +835,7 @@ export const Main = styled.main`
   }
 
   footer p {
-    color: #FFFFFFa8;
+    color: #ffffffa8;
   }
 
   footer ul {
@@ -811,7 +848,7 @@ export const Main = styled.main`
     color: #149400;
     position: relative;
     padding: 10px 0;
-    transition: .3s;
+    transition: 0.3s;
   }
 
   @media screen and (max-width: 768px) {
@@ -820,8 +857,7 @@ export const Main = styled.main`
     }
 
     footer p {
-      font-size: .5rem;
+      font-size: 0.5rem;
     }
   }
-
-`
+`;
