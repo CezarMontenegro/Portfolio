@@ -132,16 +132,14 @@ export const Main = styled.main`
     }
   }
 
-  /* ---menu-hamburguer---- */
+  /* ---floating-menu---- */
 
-  .header .hamburguer-menu {
+  .floating-menu {
     display: none;
   }
 
   @media screen and (max-width: 768px) {
-    .header {}
-
-    .header .hamburguer-menu {
+    .floating-menu {
       background-color: rgba(0, 0, 0, 0.7);
       backdrop-filter: blur(1rem);
       -webkit-backdrop-filter: blur(10px);
@@ -153,25 +151,37 @@ export const Main = styled.main`
       z-index: 999;
       width: 100%;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
+      gap: 3rem;
     }
 
-    .hamburguer-menu ul {
+    .floating-menu-nav ul {
       text-align: center;
     }
 
-    .hamburguer-menu ul li a {
+    .floating-menu-nav ul li a {
       color: rgb(255, 255, 255);
       font-size: 1.2rem;
       padding: 20px 40px;
       display: block;
       text-decoration: none;
     }
+
+    .floating-menu-social ul {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .floating-menu-social ul li a {
+      color: rgb(255, 255, 255);
+      font-size: 1.2rem;
+      display: block;
+      text-decoration: none;
+    }
   }
-
-
-
 
   /* ---section-one---- */
 
