@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Main } from "./App.styles";
 import photo1 from "./assets/photo1.png";
 import photo2 from "./assets/photo2.jpeg";
@@ -8,6 +8,36 @@ import phone from "./assets/celular-2.png";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleScroll = () => {
+    const navItems = document.querySelectorAll('.nav-item')
+    const sections = document.querySelectorAll('.section');
+
+    sections.forEach(section => {
+      const scrollPositionY = window.scrollY;
+      const sectionStartPosition = section.offsetTop;
+      const sectionHeight = section.offsetHeight;
+      const sectionId = section.getAttribute('id');
+
+      if(sectionId == 'section-one') {
+        navItems.forEach(item => {
+          item.classList.remove('actived');
+        })
+      }
+
+      if (scrollPositionY >= sectionStartPosition && scrollPositionY < sectionStartPosition + sectionHeight) {
+        navItems.forEach(item => {
+          item.classList.remove('actived');
+
+          document.querySelector(`header nav a[href='#${sectionId}']`).classList.add('actived');
+        })
+      }
+    })
+  };
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+  }, []);
+
 
   return (
     <Main>
@@ -19,16 +49,16 @@ function App() {
           <nav className="nav">
             <ul>
               <li>
-                <a href="#sobre">Sobre</a>
+                <a href="#sobre" className="nav-item">Sobre</a>
               </li>
               <li>
-                <a href="#projetos">Projetos</a>
+                <a href="#projetos" className="nav-item">Projetos</a>
               </li>
               <li>
-                <a href="#habilidades">Habilidades</a>
+                <a href="#habilidades" className="nav-item">Habilidades</a>
               </li>
               <li>
-                <a href="#contato">Contato</a>
+                <a href="#contato" className="nav-item">Contato</a>
               </li>
             </ul>
           </nav>
@@ -185,7 +215,7 @@ function App() {
           </div>
         </div>
       )}
-      <section id="section-one" className="section-one">
+      <section id="section-one" className="section section-one">
         <div className="wrapper">
           <div className="about">
             <p>Hello World 👋🏼</p>
@@ -200,7 +230,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section id="sobre" className="section-sobre">
+      <section id="sobre" className="section section-sobre">
         <div className="wrapper">
           <div className="sobre-header">
             <h2>Sobre mim</h2>
@@ -235,7 +265,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section id="projetos" className="section-projetos">
+      <section id="projetos" className="section section-projetos">
         <div className="wrapper">
           <div className="projetos-header">
             <h2>Projetos</h2>
@@ -338,7 +368,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section id="habilidades" className="section-habilidades">
+      <section id="habilidades" className="section section-habilidades">
         <div className="wrapper">
           <div className="habilidades-header">
             <h2>Habilidades</h2>
@@ -366,7 +396,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section id="contato" className="section-contato">
+      <section id="contato" className="section section-contato">
         <div className="wrapper">
           <div className="contato">
             <h2>Fale comigo!</h2>
