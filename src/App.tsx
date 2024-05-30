@@ -16,6 +16,22 @@ function App() {
           <div className="logo">
             <a href="#section-one">&lt;\Cezar&gt;</a>
           </div>
+          <nav className="nav">
+            <ul>
+              <li>
+                <a href="#sobre">Sobre</a>
+              </li>
+              <li>
+                <a href="#projetos">Projetos</a>
+              </li>
+              <li>
+                <a href="#habilidades">Habilidades</a>
+              </li>
+              <li>
+                <a href="#contato">Contato</a>
+              </li>
+            </ul>
+          </nav>
           <div className="social">
             <ul>
               <li>

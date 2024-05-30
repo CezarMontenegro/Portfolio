@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Main = styled.main`
-  /* ---header---- */
-
+  /* ---header---- */ 
+  
   .header {
     background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(1rem);
