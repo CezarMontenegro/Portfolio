@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const Main = styled.main`
-  /* ---header---- */
-
+  /* ---header---- */ 
+  
   .header {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(1rem);
     height: 4.5rem;
     width: 100%;
@@ -66,6 +66,21 @@ export const Main = styled.main`
 
   .nav ul li a:hover {
     color: #22ff00;
+  }
+
+  .nav .actived {
+    color: #22ff00;
+  }
+
+  .nav .actived::after {
+    content: " ";
+    height: 2px;
+    background-color: #22ff00;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+    width: 100%;    
   }
 
   .nav ul li a::after,
@@ -149,7 +164,7 @@ export const Main = styled.main`
 
   @media screen and (max-width: 768px) {
     .floating-menu {
-      background-color: rgba(0, 0, 0, 0.7);
+      background-color: rgba(0, 0, 0, 0.3);
       backdrop-filter: blur(1rem);
       -webkit-backdrop-filter: blur(10px);
       height: calc(100vh - 4.5rem);
