@@ -646,6 +646,7 @@ export const Main = styled.main`
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 4.5rem;
   }
 
   .section-habilidades .habilidades-header h2 {
@@ -748,7 +749,7 @@ export const Main = styled.main`
     padding: 15px;
   }
 
-  .contato .cards:hover {
+  .contato .contact-ancora:hover {
     background-color: rgb(30, 30, 30);
     border-radius: 10px;
   }
@@ -812,11 +813,16 @@ export const Main = styled.main`
 
     .section-contato .contato {
       width: 90%;
+      height: 100%;
       align-items: center;
       padding-left: 0;
     }
 
     .section-contato .contato h2 {
+      margin-bottom: 11rem;
+    }
+
+    .section-contato .contato button {
       margin-bottom: 11rem;
     }
 
